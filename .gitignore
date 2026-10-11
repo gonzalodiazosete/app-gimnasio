@@ -4,3 +4,7 @@ rutinas.txt
 
 # Salida de compilación de Eclipse
 /bin/
+
+
+# Configuración personal de Eclipse
+.settings/

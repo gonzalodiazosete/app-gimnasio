@@ -10,6 +10,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
+import gymApp.config.Configuracion;
 import gymApp.dao.IRutinaDAO;
 import gymApp.model.Ejercicio;
 import gymApp.model.Rutina;
@@ -17,8 +18,8 @@ import gymApp.model.Rutina;
 public class RutinaDAO implements IRutinaDAO {
 
     // De momento fijos; más adelante irán a application.properties
-    private static final String RUTA = "rutinas.txt";
-    private static final String SEPARADOR = ";";
+	private static final String RUTA = Configuracion.get("ruta.rutinas");
+	private static final String SEPARADOR = Configuracion.get("separador");
 
     @Override
     public boolean guardar(Rutina rutina) {

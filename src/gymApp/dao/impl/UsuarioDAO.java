@@ -6,14 +6,15 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 
+import gymApp.config.Configuracion;
 import gymApp.dao.IUsuarioDAO;
 import gymApp.model.Usuario;
 
 public class UsuarioDAO implements IUsuarioDAO {
 
     // De momento fijos; más adelante irán a application.properties
-    private static final String RUTA = "usuario.txt";
-    private static final String SEPARADOR = ";";
+	private static final String RUTA = Configuracion.get("ruta.usuario");
+	private static final String SEPARADOR = Configuracion.get("separador");
 
     @Override
     public Usuario obtener() {
