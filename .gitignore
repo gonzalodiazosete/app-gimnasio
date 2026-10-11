@@ -1,0 +1,6 @@
+# Datos de uso de la app (cambian cada vez que se ejecuta)
+usuario.txt
+rutinas.txt
+
+# Salida de compilación de Eclipse
+/bin/
